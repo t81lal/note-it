@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_ATLAS_URL": "<url>",
+        "SERVER_PORT": 3000,
+        "JWT_KEY": "<key>"
+    }
+}
