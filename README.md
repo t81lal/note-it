@@ -1,6 +1,7 @@
 # note-It
 
-`note-it` is a simple backend app for users to create, edit, archive and delete collections of notes.
+`note-it` is a simple backend app for users to create, edit, archive and delete collections of notes. <p>
+It runs using: nodejs, expressjs, mongoDB (mongoose library), morgan, nodemon, bcrypt and jsonwebtoken.
 
 ## Installation
 1. Clone the repository
@@ -306,3 +307,14 @@ Response 500:
     "error" :: Error
 }
 ```
+
+## TODO:
+1. Different permissions (read/write/delete) for different users
+2. Add time/date information to notes
+3. User 'groups' for shared notes
+4. Images/videos in notes
+5. Possible encryption to notes' contents
+
+
+## Additional Information:
+This is my first project using nodejs (and javascript) so feel free to give feedback and improve the quality of the code as you see fit.
