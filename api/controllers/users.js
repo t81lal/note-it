@@ -172,7 +172,7 @@ module.exports.get_user_list = (res) => {
         .catch(err => {
             res.status(500).json({
                 mesesage: 'Error fetching user list',
-
+                error: err
             })
         })
 }

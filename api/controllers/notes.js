@@ -103,7 +103,13 @@ module.exports.note_archive = (res, user, noteId) => {
                 })
             }
         })
-        .catch()
+        .catch(err => {
+            res.status(404).json({
+                message: 'Note not found',
+                user: user,
+                id: noteId
+            })
+        })
 }
 
 module.exports.note_delete = (res, user, noteId) => {
