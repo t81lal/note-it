@@ -6,6 +6,7 @@ const userSchema = mongoose.Schema({
     password: { type: String, required: true },
 })
 
+/* We don't want to ever show the password (even if it is a hash) to users */
 userSchema.set('toJSON', {
     transform: function(doc, ret, options) {
         delete ret.password

@@ -164,7 +164,6 @@ module.exports.user_delete = (res, loggedInUser, userId) => {
 
 module.exports.get_user_list = (res) => {
     User.find()
-        .select('-password')
         .exec()
         .then(docs => {
             res.status(200).json(docs)

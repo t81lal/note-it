@@ -8,6 +8,7 @@ const mongoose = require('mongoose')
 const userRoutes = require('./api/routes/users')
 const noteRoutes = require('./api/routes/notes')
 
+// Used to stop weird bugs to do with browser security
 corsHandler = (req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'),
     res.header('Access-Control-Allow-Headers', '*')
